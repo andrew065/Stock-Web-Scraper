@@ -6,7 +6,6 @@ import urllib3
 from bs4 import BeautifulSoup
 from lxml import html
 from openpyxl import load_workbook
-from selenium import webdriver
 
 
 def read_spreadsheet(file, sheet_name):
@@ -53,13 +52,6 @@ def get_stats(ticker):
         print(stat.xpath('.//td[1]//text()'), stat.xpath('.//td[2]//text()'))
 
 
-stock_list = read_spreadsheet('FINAL-22-23-Approved-Stock-List-V2_September9.xlsx', 'Utilities')
+stock_list = read_spreadsheet('Spreadsheets/Book1.xlsx', 'Utilities')
 
-get_stats(stock_list[0][1])
-
-driver = webdriver.Chrome()
-driver.get("https://finance.yahoo.com/quote/AEP/key-statistics?p=AEP")
-html = driver.execute_script('return document.body.innerHTML;')
-soup = BeautifulSoup(html, 'lxml')
-
-print(soup)
+get_summary(stock_list[0][1])
