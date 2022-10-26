@@ -8,8 +8,14 @@ from openpyxl import load_workbook
 def download_stock_info(name, ticker):
     url = 'https://www.macrotrends.net/stocks/charts/%s/%s/stock-price-history'% (ticker, name)
     driver.get(url)
-    driver.switch_to.frame('chart_iframe')
-
+    try:
+        driver.switch_to.frame('chart_iframe')
+    except selenium.common.exceptions.NoSuchFrameException as error:
+        print(error)
+        return 0
+    except selenium.common.exceptions.NoSuchElementException as error:
+        print(error)
+        return 0
     soup = BeautifulSoup(driver.page_source, 'lxml')
 
     scripts = soup.findAll("script")
@@ -20,15 +26,19 @@ def download_stock_info(name, ticker):
     time.sleep(0.1)
 
 
+
 def format_stock_name(stock_name):
     words = stock_name.lower().split(' ')
     final_name = ''
     for word in words:
-        if word not in ['co', 'inc', 'ltd', 'corp', '&', 'group', 'holdings', 'SA']:
+        if word not in ['co', 'inc', 'ltd', 'corp', '&', 'group', 'holdings', 'sa', 'plc']:
             if final_name == '':
                 final_name += word
             else:
                 final_name += '-' + word
+
+    while '&' in final_name:
+        final_name = final_name.replace('&', '-')
     return final_name
 
 
@@ -55,7 +65,8 @@ industry_stocks = get_company_info()
 for industry in industry_stocks:
     print('\n', industry)
     for stock in industry_stocks[industry]:
-        print(format_stock_name(stock[0]), stock[1])
-        # download_stock_info(format_stock_name(stock[0]), stock[1])
+        result = download_stock_info(format_stock_name(stock[0]), stock[1])
+        if result == 0:
+            print(format_stock_name(stock[0]), stock[1])
 
 driver.close()

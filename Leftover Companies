@@ -1,0 +1,565 @@
+/Users/andrewlian/PycharmProjects/Wharton/venv/bin/python /Users/andrewlian/PycharmProjects/Wharton/IndustryStockModel.py
+
+ Communication Services
+Exception: Message: chart_iframe
+
+bharti-airtel 532454
+Exception: Message: chart_iframe
+
+bt-plc BT.A
+Exception: Message: chart_iframe
+
+china-mobile 00941
+Exception: Message: chart_iframe
+
+facebook FB
+Exception: Message: chart_iframe
+
+just-dial 535648
+Exception: Message: chart_iframe
+
+pearson-plc PSON
+Exception: Message: chart_iframe
+
+rightmove-plc RMV
+Exception: Message: chart_iframe
+
+tencent 00700
+
+ Consumer Discretionary
+Exception: Message: chart_iframe
+
+bajaj-auto 532977
+Exception: Message: chart_iframe
+
+bata-india 500043
+Exception: Message: chart_iframe
+
+bosch 500530
+Exception: Message: chart_iframe
+
+china-tourism-duty-free 601888
+Exception: Message: chart_iframe
+
+dollarama DOL
+Exception: Message: chart_iframe
+
+dominos-pizza DOM
+Exception: Message: chart_iframe
+
+hero-motocorp 500182
+Exception: Message: chart_iframe
+
+hostelworld-plc HSW
+Exception: Message: chart_iframe
+
+jubilant-foodworks 533155
+Exception: Message: chart_iframe
+
+lojas-renner-sa LREN3
+Exception: Message: chart_iframe
+
+lookers-plc LOOK
+Exception: Message: chart_iframe
+
+magazine-luiza-sa MGLU3
+Exception: Message: chart_iframe
+
+mahindra-mahindra 500520
+Exception: Message: chart_iframe
+
+maruti-suzuki-india 532500
+Exception: Message: chart_iframe
+
+meituan 03690
+Exception: Message: chart_iframe
+
+midea 000333
+Exception: Message: chart_iframe
+
+next-plc NXT
+Exception: Message: chart_iframe
+
+on-the-beach-plc OTB
+Exception: Message: chart_iframe
+
+tata-motors 500570
+Exception: Message: chart_iframe
+
+titan 500114
+Exception: Message: chart_iframe
+
+whitbread-plc WTB
+
+ Consumer Staples
+Exception: Message: chart_iframe
+
+alimentation-couche-tard ATD.B
+Exception: Message: chart_iframe
+
+ambev-sa ABEV3
+Exception: Message: chart_iframe
+
+atacadao-sa CRFB3
+Exception: Message: chart_iframe
+
+brf-sa BRFS3
+Exception: Message: chart_iframe
+
+godrej-agrovet 540743
+Exception: Message: chart_iframe
+
+godrej-consumer-products 532424
+Exception: Message: chart_iframe
+
+hindustan-unilever 500696
+Exception: Message: chart_iframe
+
+itc 500875
+Exception: Message: chart_iframe
+
+jbs-sa JBSS3
+Exception: Message: chart_iframe
+
+kweichow-moutai 600519
+Exception: Message: chart_iframe
+
+m-dias-branco-sa-industria-e-comercio-de-alimentos MDIA3
+Exception: Message: chart_iframe
+
+natura-holding-sa NTCO3
+Exception: Message: chart_iframe
+
+nestle-india 500790
+Exception: Message: chart_iframe
+
+raia-drogasil-sa RADL3
+Exception: Message: chart_iframe
+
+revlon REV
+Exception: Message: chart_iframe
+
+sainsbury-(j)-plc SBRY
+Exception: Message: chart_iframe
+
+unilever-plc ULVR
+Exception: Message: chart_iframe
+
+wuliangye-yibin 000858
+Exception: Message: chart_iframe
+
+wynnstay-plc WYN
+
+ Energy
+Exception: Message: chart_iframe
+
+china-petroleum-chemical SNP
+Exception: Message: chart_iframe
+
+coal-india 533278
+Exception: Message: chart_iframe
+
+cosan-sa CSAN3
+Exception: Message: chart_iframe
+
+lamprell-plc LAM
+Exception: Message: chart_iframe
+
+oil-natural-gas 500312
+Exception: Message: chart_iframe
+
+petrochina PTR
+Exception: Message: chart_iframe
+
+petroleo-brasileiro-sa-petrobras PETR3
+Exception: Message: chart_iframe
+
+reliance-industries 500325
+Exception: Message: chart_iframe
+
+royal-dutch-shell-plc RDSA
+Exception: Message: chart_iframe
+
+tullow-oil-plc TLW
+Exception: Message: chart_iframe
+
+ultrapar-participacoes-sa UGPA3
+
+ Financials
+Exception: Message: chart_iframe
+
+aviva-plc AV.
+Exception: Message: chart_iframe
+
+axis-bank 532215
+Exception: Message: chart_iframe
+
+b3-sa---brasil-bolsa-balcao B3SA3
+Exception: Message: chart_iframe
+
+bajaj-finserv 532978
+Exception: Message: chart_iframe
+
+banco-btg-pactual-s.a. BPAC11
+Exception: Message: chart_iframe
+
+banco-do-brasil-sa-bb-brasil BBAS3
+Exception: Message: chart_iframe
+
+banco-santander-(brasil)-sa SANB11
+Exception: Message: chart_iframe
+
+bank-bradesco-sa BBDC3
+Exception: Message: chart_iframe
+
+bank-of-ningbo 002142
+Exception: Message: chart_iframe
+
+bb-seguridade-participacoes-sa BBSE3
+Exception: Message: chart_iframe
+
+canadian-western-bank CWB
+Exception: Message: chart_iframe
+
+china-construction-bank 00939
+Exception: Message: chart_iframe
+
+citigroup C
+Exception: Message: chart_iframe
+
+city-of-london-investment-plc CLIG
+Exception: Message: chart_iframe
+
+fairfax-financial FFH
+Exception: Message: chart_iframe
+
+great-west-lifeco GWO
+Exception: Message: chart_iframe
+
+hdfc-bank 500180
+Exception: Message: chart_iframe
+
+housing-development-finance 500010
+Exception: Message: chart_iframe
+
+hsbc-plc HSBA
+Exception: Message: chart_iframe
+
+icici-bank 532174
+Exception: Message: chart_iframe
+
+irb-brasil-resseguros-sa IRBR3
+Exception: Message: chart_iframe
+
+kotak-mahindra-bank 500247
+Exception: Message: chart_iframe
+
+lloyds-banking-plc LLOY
+Exception: Message: chart_iframe
+
+max-financial-services 500271
+Exception: Message: chart_iframe
+
+ping-an-insurance-(group)-co.-of-china 02318
+Exception: Message: chart_iframe
+
+piramal-enterprises 500302
+Exception: Message: chart_iframe
+
+porto-seguro-sa PSSA3
+Exception: Message: chart_iframe
+
+rec 532955
+Exception: Message: chart_iframe
+
+schroders-plc SDR
+Exception: Message: chart_iframe
+
+standard-chartered-plc STAN
+Exception: Message: chart_iframe
+
+state-bank-of-india 500112
+Exception: Message: chart_iframe
+
+sul-america-sa SULA11
+Exception: Message: chart_iframe
+
+yes-bank 532648
+
+ Health Care
+Exception: Message: chart_iframe
+
+aurobindo-pharma 524804
+Exception: Message: chart_iframe
+
+cipla 500087
+Exception: Message: chart_iframe
+
+dr-reddy's-laboratories 500124
+Exception: Message: chart_iframe
+
+endo-international-plc ENDP
+Exception: Message: chart_iframe
+
+genmab-a/s GMAB
+Exception: Message: chart_iframe
+
+granules-india 532482
+Exception: Message: chart_iframe
+
+hypera-sa HYPE3
+Exception: Message: chart_iframe
+
+jiangsu-hengrui-pharmaceuticals 600276
+Exception: Message: chart_iframe
+
+notre-dame-intermedica-participacoes-sa GNDI3
+Exception: Message: chart_iframe
+
+shenzhen-mindray-bio-medical-electronics 300760
+Exception: Message: chart_iframe
+
+smith-nephew-plc SN.
+Exception: Message: chart_iframe
+
+sun-pharmaceuticals-industries 524715
+Exception: Message: chart_iframe
+
+zogenix ZGNX
+
+ Industrials
+Exception: Message: chart_iframe
+
+bharat-heavy-electricals 500103
+Exception: Message: chart_iframe
+
+bombardier BBD.B
+Exception: Message: chart_iframe
+
+bunzl-plc BNZL
+Exception: Message: chart_iframe
+
+cargojet CJT
+Exception: Message: chart_iframe
+
+ccr-sa CCRO3
+Exception: Message: chart_iframe
+
+china-state-construction-international 03311
+Exception: Message: chart_iframe
+
+citic 00267
+Exception: Message: chart_iframe
+
+discoverie-plc DSCV
+Exception: Message: chart_iframe
+
+easyjet-plc EZJ
+Exception: Message: chart_iframe
+
+embraer-sa EMBR3
+Exception: Message: chart_iframe
+
+experian-plc EXPN
+Exception: Message: chart_iframe
+
+grupo-aeroportuario-del-pacifico-sab-de-cv-class-b GAPB
+Exception: Message: chart_iframe
+
+larsen-toubro 500510
+Exception: Message: chart_iframe
+
+localiza-rent-a-car-sa RENT3
+Exception: Message: chart_iframe
+
+rbc-bearings ROLL
+Exception: Message: chart_iframe
+
+rolls-royce-plc RR.
+Exception: Message: chart_iframe
+
+rumo-sa RAIL3
+Exception: Message: chart_iframe
+
+shanghai-international-airport 600009
+Exception: Message: chart_iframe
+
+smiths-plc SMIN
+Exception: Message: chart_iframe
+
+weg-sa WEGE3
+
+ Information Technology
+Exception: Message: chart_iframe
+
+apple AAPL
+Exception: Message: chart_iframe
+
+astra-microwave-products 532493
+Exception: Message: chart_iframe
+
+cielo-sa CIEL3
+Exception: Message: chart_iframe
+
+constellation-software CSU
+Exception: Message: chart_iframe
+
+eclerx-services 532927
+Exception: Message: chart_iframe
+
+enghouse-systems ENGH
+Exception: Message: chart_iframe
+
+foxconn-industrial-internet 601138
+Exception: Message: chart_iframe
+
+hangzhou-hik-vision-digital-technology 002415
+Exception: Message: chart_iframe
+
+hcl-technologies 532281
+Exception: Message: chart_iframe
+
+infosys 500209
+Exception: Message: chart_iframe
+
+micro-focus-international-plc MCRO
+Exception: Message: chart_iframe
+
+mindtree 532819
+Exception: Message: chart_iframe
+
+niit 500304
+Exception: Message: chart_iframe
+
+sage-(the)-plc SGE
+Exception: Message: chart_iframe
+
+tata-consultancy-services 532540
+Exception: Message: chart_iframe
+
+tech-mahindra 532755
+Exception: Message: chart_iframe
+
+wipro 507685
+
+ Materials
+Exception: Message: chart_iframe
+
+anhui-conch-cement 00914
+Exception: Message: chart_iframe
+
+asian-paints 500820
+Exception: Message: chart_iframe
+
+atul 500027
+Exception: Message: chart_iframe
+
+berger-paints-india 509480
+Exception: Message: chart_iframe
+
+companhia-siderurgica-nacional CSNA3
+Exception: Message: chart_iframe
+
+glencore-plc GLEN
+Exception: Message: chart_iframe
+
+hindalco-industries 500440
+Exception: Message: chart_iframe
+
+innospec IOSP
+Exception: Message: chart_iframe
+
+johnson-matthey-plc JMAT
+Exception: Message: chart_iframe
+
+kirkland-lake-gold KL
+Exception: Message: chart_iframe
+
+klabin-sa KLBN11
+Exception: Message: chart_iframe
+
+mondi-plc MNDI
+Exception: Message: chart_iframe
+
+suzano-sa SUZB3
+Exception: Message: chart_iframe
+
+tata-steel 500470
+Exception: Message: chart_iframe
+
+ultratech-cement 532538
+Exception: Message: chart_iframe
+
+vale-sa VALE3
+Exception: Message: chart_iframe
+
+vedanta 500295
+
+ Real Estate
+Exception: Message: chart_iframe
+
+br-malls-participacoes-sa BRML3
+Exception: Message: chart_iframe
+
+china-vanke 000002
+Exception: Message: chart_iframe
+
+china-world-trade-center 600007
+Exception: Message: chart_iframe
+
+multiplan-empreendimentos-imobiliarios-sa MULT3
+
+ Utilities
+Exception: Message: chart_iframe
+
+canadian-utilities CU
+Exception: Message: chart_iframe
+
+centrais-eletricas-brasileiras-sa ELET3
+Exception: Message: chart_iframe
+
+china-gas 00384
+Exception: Message: chart_iframe
+
+china-yangtze-power 600900
+Exception: Message: chart_iframe
+
+companhia-de-saneamento-basico-do-estado-de-sao-paulo SBSP3
+Exception: Message: chart_iframe
+
+cpfl-energia-s.a. CPFE3
+Exception: Message: chart_iframe
+
+engie-brasil-energia-sa EGIE3
+Exception: Message: chart_iframe
+
+equatorial-energia-sa EQTL3
+Exception: Message: chart_iframe
+
+gail-(india) 532155
+Exception: Message: chart_iframe
+
+gujarat-industries-power 517300
+Exception: Message: chart_iframe
+
+huaneng-power-international HNP
+Exception: Message: chart_iframe
+
+ntpc 532555
+Exception: Message: chart_iframe
+
+power-grid-of-india 532898
+Exception: Message: chart_iframe
+
+sjvn 533206
+Exception: Message: chart_iframe
+
+sse-plc SSE
+Exception: Message: chart_iframe
+
+tata-power 500400
+Exception: Message: chart_iframe
+
+united-utilities-plc UU.
+
+Process finished with exit code 0

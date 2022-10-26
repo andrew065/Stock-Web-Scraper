@@ -31,12 +31,13 @@ def get_stats(stock_info):
         stock_info.append(stat.xpath('.//td[2]//text()'))
 
 
-def web_scrape(spreadsheet, industry, cols, sheet_name):
-    industry = Industry(spreadsheet, industry, cols)
+def web_scrape(wb, industry_name, cols, new_wb):
+    industry = Industry(wb, industry_name, cols, new_wb)
     industry.summary()
     industry.write_headers()
     industry.write_spreadsheet()
-    industry.save_wb(sheet_name)
+
+    return industry
 
 
 SUM_HEADERS = ['Previous Close', 'Open', 'Bid', 'Ask', "Day's Range", '52 Week Range', 'Volume', 'Avg. Volume',
@@ -46,17 +47,15 @@ STAT_HEADERS = []
 
 
 class Industry:
-    def __init__(self, filename, ind, cols):
-        self.filename = filename
+    def __init__(self, wb, ind, cols, new_wb):
         self.industry = ind
         self.stocks = []
         self.headers = []
 
-        self.new_wb = Workbook()
+        self.new_wb = new_wb
         self.new_ws = self.new_wb.create_sheet(self.industry)
 
-        pd.options.display.float_format = '{:.0f}'.format
-        self.wb = load_workbook(filename=self.filename)
+        self.wb = wb
         self.ws = self.wb[self.industry]
 
         self.read_spreadsheet()
@@ -101,6 +100,14 @@ class Industry:
         list.extend(self.headers, STAT_HEADERS)
 
 
-stock = ['Canadian Utilities', 'CU.TO', 'Toronto Stock Exchange']
-get_summary(stock)
-print(stock)
+stock_spreadsheet = load_workbook(filename='Spreadsheets/Wharton Stock List.xlsx')
+sheets = stock_spreadsheet.sheetnames
+
+industries = []
+
+summary_spreadsheet = load_workbook(filename='Stock Info - Summary.xlsx')
+
+for i in range(1, len(sheets)):
+    industries.append(web_scrape(stock_spreadsheet, sheets[i], 3, summary_spreadsheet))
+
+industries[0].save_wb('Stock Info - Summary.xlsx')

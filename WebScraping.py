@@ -5,7 +5,8 @@ import requests
 import urllib3
 from bs4 import BeautifulSoup
 from lxml import html
-from openpyxl import load_workbook
+from openpyxl import load_workbook, Workbook
+from selenium import webdriver
 
 
 def read_spreadsheet(file, sheet_name):
@@ -23,6 +24,16 @@ def read_spreadsheet(file, sheet_name):
 
     wb.close()
     return stocks
+
+
+def write_data(name, sheet_name, column, row, values):
+    wb = Workbook()
+    s = wb.create_sheet(sheet_name)
+
+    for c in range(1, column + 1):
+        c
+
+    wb.save(name)
 
 
 def get_request(url):
@@ -52,6 +63,9 @@ def get_stats(ticker):
         print(stat.xpath('.//td[1]//text()'), stat.xpath('.//td[2]//text()'))
 
 
-stock_list = read_spreadsheet('Spreadsheets/Book1.xlsx', 'Utilities')
+stock_list = read_spreadsheet('FINAL-22-23-Approved-Stock-List-V2_September9.xlsx', 'Utilities')
+
+get_stats(stock_list[0][1])
+
 
 get_summary(stock_list[0][1])
