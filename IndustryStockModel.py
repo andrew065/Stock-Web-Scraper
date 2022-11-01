@@ -1,8 +1,10 @@
+import csv
+import os
+import time
 import selenium.common.exceptions
-from selenium import webdriver
 from bs4 import BeautifulSoup
-import time, os, csv
 from openpyxl import load_workbook
+from selenium import webdriver
 
 
 def download_stock_info(name, ticker):
@@ -85,7 +87,5 @@ def read_industry_stock_data():
 
 driver = webdriver.Chrome()
 industry_stocks = get_company_info()
-
 read_industry_stock_data()
-
 driver.close()
