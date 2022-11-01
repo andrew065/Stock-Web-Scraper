@@ -1,7 +1,7 @@
 import selenium.common.exceptions
 from selenium import webdriver
 from bs4 import BeautifulSoup
-import time
+import time, os, csv
 from openpyxl import load_workbook
 
 
@@ -11,10 +11,10 @@ def download_stock_info(name, ticker):
     try:
         driver.switch_to.frame('chart_iframe')
     except selenium.common.exceptions.NoSuchFrameException as error:
-        print(error)
+        print(error, name, ticker)
         return 0
     except selenium.common.exceptions.NoSuchElementException as error:
-        print(error)
+        print(error, name, ticker)
         return 0
     soup = BeautifulSoup(driver.page_source, 'lxml')
 
@@ -24,7 +24,6 @@ def download_stock_info(name, ticker):
                   script.find('$(".imageExport").click( function()')].split('\'')[1]
     driver.get(link)
     time.sleep(0.1)
-
 
 
 def format_stock_name(stock_name):
@@ -59,14 +58,34 @@ def get_company_info():
     return all_stocks
 
 
+def scrape_macrotrends_stockprice():
+    for industry in industry_stocks:
+        print('\n', industry)
+        for stock in industry_stocks[industry]:
+            if 'SA' in stock[0]:
+                print(stock[0])
+                result = download_stock_info(format_stock_name(stock[0]), stock[1])
+                if result == 0:
+                    print(format_stock_name(stock[0]), stock[1])
+
+
+def read_industry_stock_data():
+    for industry in industry_stocks:
+        directory = f"Industry Stock Data/{industry}"
+
+        for filename in os.listdir(directory):
+            file = os.path.join(directory, filename)
+
+            if os.path.isfile(file):
+                with open(file, newline='') as csvfile:
+                    reader = csv.DictReader(csvfile)
+                    for row in reader:
+                        download_stock_info(format_stock_name(row['Name']), row['Symbol'])
+
+
 driver = webdriver.Chrome()
 industry_stocks = get_company_info()
 
-for industry in industry_stocks:
-    print('\n', industry)
-    for stock in industry_stocks[industry]:
-        result = download_stock_info(format_stock_name(stock[0]), stock[1])
-        if result == 0:
-            print(format_stock_name(stock[0]), stock[1])
+read_industry_stock_data()
 
 driver.close()
