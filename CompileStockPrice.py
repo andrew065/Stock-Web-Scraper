@@ -1,38 +1,54 @@
 import csv
 import os
 
-all_industries = {}
-industries = [folder for folder in os.listdir('Company Stock Data')]
-industries.remove('.DS_Store')
-print(industries)
 
-for industry in industries:
-    directory = f"Company Stock Data/{industry}"
+def avg_industry(ind):
+    directory = f"Company Stock Data/{ind}"
 
     for filename in os.listdir(directory):
         file = os.path.join(directory, filename)
 
         industry_stock = {}
-        with open(file, newline='') as csvfile:
+        with open(file, newline='') as file:
             for i in range(14):
-                csvfile.readline()
-            reader = csv.DictReader(csvfile)
+                file.readline()
+            reader = csv.DictReader(file)
             for row in reader:
                 date = row['date']
-                if date in industry_stock.keys():
-                    value = industry_stock[date]
-                    industry_stock[date] = float((value + row['close'])/2)
-                else:
-                    industry_stock[date] = row['close']
+                found = False
+                if len(industry_stock) == 0:
+                    industry_stock[date] = float(row['close'])
+                for k in industry_stock.keys():
+                    if k == date:
+                        value = industry_stock[date]
+                        industry_stock.update({date: float((value + float(row['close'])) / 2)})
+                        found = True
+                        break
+                if not found:
+                    industry_stock[date] = float(row['close'])
 
-        all_industries[industry] = industry_stock
+        all_industries[ind] = industry_stock
+
+
+all_industries = {}
+industries = [folder for folder in os.listdir('Company Stock Data')]
+industries.remove('.DS_Store')
+
+for industry in industries:
+    avg_industry(industry)
 
 for industry in all_industries:
     with open(f'{industry}.csv', 'w', newline='') as csvfile:
-        fieldnames = ['Date', 'Price']
+        fieldnames = ['Date', 'Price', '% Growth']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writerow({'Date': 'Date', 'Price': 'Price', '% Growth': '% Growth'})
+
+        current_ind = all_industries[industry]
+
+        initial_price = list(current_ind.values())[0]
 
         for key in all_industries[industry]:
-            writer.writerow({'Date': key, 'Price': all_industries[industry][key]})
+            price = current_ind[key]
+            writer.writerow({'Date': key, 'Price': price, '% Growth': float((price - initial_price)/initial_price)})
 
         csvfile.close()
