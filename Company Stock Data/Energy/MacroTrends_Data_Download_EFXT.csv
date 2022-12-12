@@ -1,0 +1,27 @@
+"MacroTrends Data Download"
+"EFXT - Historical Price and Volume Data"
+"Note: Historical prices are adjusted for stock splits."
+
+"Disclaimer and Terms of Use: Historical stock data is provided 'as is' and solely for informational purposes, not for trading purposes or advice."
+"MacroTrends LLC expressly disclaims the accuracy, adequacy, or completeness of any data and shall not be liable for any errors, omissions or other defects in, "
+"delays or interruptions in such data, or for any actions taken in reliance thereon.  Neither MacroTrends LLC nor any of our information providers will be liable"
+"for any damages relating to your use of the data provided."
+
+
+"ATTRIBUTION: Proper attribution requires clear indication of the data source as ""www.macrotrends.net""."
+"A ""dofollow"" backlink to the originating page is also required if the data is displayed on a web page."
+
+
+date,open,high,low,close,volume
+2022-10-13,4.4000,5.0000,4.3700,5.0000,779389
+2022-10-14,4.7400,4.7900,4.5600,4.7300,430207
+2022-10-17,4.8000,4.8700,4.7300,4.7700,637696
+2022-10-18,4.7800,4.8400,4.6400,4.7800,235492
+2022-10-19,4.7900,4.8100,4.6600,4.7600,222725
+2022-10-20,4.7900,4.8400,4.6400,4.6800,129657
+2022-10-21,4.6100,4.7500,4.5500,4.7500,80628
+2022-10-24,4.7387,4.7387,4.6200,4.6400,123328
+2022-10-25,4.6200,4.8000,4.5400,4.8000,51870
+2022-10-26,4.7800,5.0900,4.7800,5.0300,114676
+2022-10-27,5.0800,5.2000,5.0600,5.1200,96090
+2022-10-28,5.1200,5.1500,5.0000,5.1400,19416

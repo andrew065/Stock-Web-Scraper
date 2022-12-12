@@ -72,8 +72,9 @@ def scrape_macrotrends_stockprice():
 
 
 def read_industry_stock_data():
-    for industry in industry_stocks:
+    for industry in sl:
         directory = f"Industry Stock Data/{industry}"
+        print(directory)
 
         for filename in os.listdir(directory):
             file = os.path.join(directory, filename)
@@ -87,5 +88,6 @@ def read_industry_stock_data():
 
 driver = webdriver.Chrome()
 industry_stocks = get_company_info()
+sl = {"Industrials"}
 read_industry_stock_data()
 driver.close()
